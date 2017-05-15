@@ -7,8 +7,6 @@ The assembly was written and tested in .Net 4.6.2.
 [![Build status](https://ci.appveyor.com/api/projects/status/qmem8i9v5no63wfg?svg=true)](https://ci.appveyor.com/project/SeppPenner/googledriveexample)
 
 ## Basic usage:
-If you just have one language loaded, you don't need to set the current language as
-the language manager uses the only language as default.
 ```csharp
 public void Test()
 {
