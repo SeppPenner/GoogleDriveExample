@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Accounts>
+		<Account>
+			<UserName>lololol@discard.email</UserName>
+			<Password>M^TTPNyW^BST,[ZWO'%fj1@FZMxP@37k*zA_uPi?dM-47WE`f[1l;?7jBDV~MvYJ</Password>
+			<ClientId></ClientId>
+			<Name>Mega</Name>
+		</Account>
+		<Account>
+			<UserName>lolololol@discard.email</UserName>
+			<Password>r}`.*54o.2z\es8);{!O_ZyrTG$Dn':3k7;d=`R[(__D;vwFhJVjG8`Z+.,eEaf]</Password>
+			<ClientId></ClientId>
+			<Name>Mega</Name>
+		</Account>
+		<Account>
+			<UserName>lolololol15rc6gf@discard.email</UserName>
+			<Password>BmHiYSj]%JqOI7}*DLcXPcbZXn#{w}T|fFA`R54FtVd?;u;Yx[`D'k0Qy^'E/cf/</Password>
+			<ClientId></ClientId>
+			<Name>Mega</Name>
+		</Account>
+		<Account>
+			<UserName>h1366112@trbvm.com</UserName>
+			<Password>@T;sM/8X5dVRFRz=rhvS(hxqBKmTQO6|A%.ALG9B910)`_/0@DKT"0Vdk}lm>:.@</Password>
+			<ClientId></ClientId>
+			<Name>Mega</Name>
+		</Account>
+		<Account>
+			<UserName>HansDampf99984@googlemail.com</UserName>
+			<Password>SpVnBqGtfjjE2yEKKFRevvfN</Password>
+			<ClientId>746978683439-rlnv85b0k5dlc2mg40v5067r4m86kopk.apps.googleusercontent.com</ClientId>
+			<Name>GDrive</Name>
+		</Account>
+		<Account>
+			<UserName>LetsZockClassic@googlemail.com</UserName>
+			<Password>h6vIp5hYMmJ4fg74zN_UgJKN</Password>
+			<ClientId>828135358217-m4430rqc4a0v743al5pjf999nbcev5lh.apps.googleusercontent.com</ClientId>
+			<Name>GDrive</Name>
+		</Account>
+		<Account>
+			<UserName>Ruhrpottcarpaccio@gmail.com</UserName>
+			<Password>vTNYsLorwUPqRIOrY6TugSey</Password>
+			<ClientId>91436758568-9j6rv6eorcth84itrsql2tbs2glhlipm.apps.googleusercontent.com</ClientId>
+			<Name>GDrive</Name>
+		</Account>
+	</Accounts>
+</Config>
