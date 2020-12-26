@@ -2,7 +2,7 @@ GoogleDriveExample
 ====================================
 
 GoogleDriveExample is an assembly/ library on how to work with the Google.Apis.Drive.v3.dll.
-The assembly was written and tested in .Net 4.8.
+The assembly was written and tested in .Net 5.0.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/qmem8i9v5no63wfg?svg=true)](https://ci.appveyor.com/project/SeppPenner/googledriveexample)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/GoogleDriveExample.svg)](https://github.com/SeppPenner/GoogleDriveExample/issues)
@@ -85,10 +85,7 @@ namespace GoogleDriveExample.Interfaces
 }
 ```
 
-
 Change history
 --------------
 
-* **Version 1.0.1.0 (2019-10-27)** : Updated nuget packages, added GitVersionTask.
-* **Version 1.0.0.1 (2019-05-05)** : Updated .Net version to 4.8.
-* **Version 1.0.0.0 (2017-05-15)** : 1.0 release.
+See the [Changelog](https://github.com/SeppPenner/GoogleDriveExample/blob/master/Changelog.md).
