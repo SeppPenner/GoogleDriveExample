@@ -11,7 +11,7 @@ The assembly was written and tested in .Net 5.0.
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/SeppPenner/GoogleDriveExample/master/License.txt)
 [![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/GoogleDriveExample/badge.svg)](https://snyk.io/test/github/SeppPenner/GoogleDriveExample)
 
-## Basic usage:
+## Basic usage
 ```csharp
 public void Test()
 {
