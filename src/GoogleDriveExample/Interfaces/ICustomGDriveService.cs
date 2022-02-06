@@ -23,12 +23,12 @@ namespace GoogleDriveExample.Interfaces
         /// <summary>
         ///     Called when the upload process is changed.
         /// </summary>
-        event EventHandler OnUploadProgressChanged;
+        event EventHandler? OnUploadProgressChanged;
 
         /// <summary>
         ///     Called when the upload process is finished.
         /// </summary>
-        event EventHandler OnUploadSuccessful;
+        event EventHandler? OnUploadSuccessful;
 
         /// <summary>
         ///     Gets the used quota of the account.

@@ -92,14 +92,14 @@ namespace GoogleDriveExample.Implementation
         ///     Called when the upload process is changed.
         /// </summary>
         /// <seealso cref="ICustomGDriveService"/>
-        public event EventHandler OnUploadProgressChanged;
+        public event EventHandler? OnUploadProgressChanged;
 
         /// <inheritdoc cref="ICustomGDriveService"/>
         /// <summary>
         ///     Called when the upload process is finished.
         /// </summary>
         /// <seealso cref="ICustomGDriveService"/>
-        public event EventHandler OnUploadSuccessful;
+        public event EventHandler? OnUploadSuccessful;
 
         /// <inheritdoc cref="ICustomGDriveService"/>
         /// <summary>
@@ -154,7 +154,7 @@ namespace GoogleDriveExample.Implementation
         {
             var byteArray = IOFile.ReadAllBytes(uploadFile);
             var stream = new MemoryStream(byteArray);
-            var request = service.Files.Create(this.GetBody(uploadFile, parent), stream, this.GetMimeType(uploadFile));
+            var request = service.Files.Create(this.GetBody(uploadFile, parent), stream, GetMimeType(uploadFile));
             request.ProgressChanged += this.UploadProgressChanged;
             request.ResponseReceived += this.UploadSuccessful;
             request.Upload();
@@ -287,7 +287,7 @@ namespace GoogleDriveExample.Implementation
             {
                 Name = Path.GetFileName(uploadFile),
                 Description = uploadFile,
-                MimeType = this.GetMimeType(uploadFile),
+                MimeType = GetMimeType(uploadFile),
                 Parents = new List<string> { parent }
             };
 
@@ -299,19 +299,19 @@ namespace GoogleDriveExample.Implementation
         /// </summary>
         /// <param name="fileName">The file name.</param>
         /// <returns>The MIME type.</returns>
-        private string GetMimeType(string fileName)
+        private static string GetMimeType(string fileName)
         {
             var extension = Path.GetExtension(fileName);
 
-            if (extension == null)
+            if (extension is null)
             {
                 return DefaultMimeType;
             }
 
             var ext = extension.ToLower();
             var regKey = Registry.ClassesRoot.OpenSubKey(ext);
-            // ReSharper disable once PossibleNullReferenceException
-            return regKey?.GetValue(ContentType) == null ? DefaultMimeType : regKey.GetValue(ContentType).ToString();
+
+            return regKey?.GetValue(ContentType)?.ToString() ?? DefaultMimeType;
         }
     }
 }
